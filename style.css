@@ -1,108 +1,177 @@
 /****************************
- ====== Votre CSS =====
- ****************************/
-*{
+      ===== All =====
+****************************/
+  *{
+    /*border: 1px dotted;*/
     letter-spacing: 3px;
-}
-
-header {
+  }
+/****************************
+     ===== Header =====
+****************************/
+  header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 40px;
-}
-
-.headerlist {
+  }
+  .headerlist{
     list-style: none;
     display: flex;
     flex-direction: row;
-}
-
-nav li{
+  }
+/**** === Menu === ****/
+  nav ul a{
+    border-style: solid;
+	  display:block;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight:500;
+    font-size: 10px;
+    line-height:30px;
+    color:black;
+  }
+  nav li{
     font-family: "Josefin Sans";
-    margin-right: 40px;
-}
-
-h1{
-    font-family: "Arvo";
-    font-weight: lighter;
-    font-size: 35px;
-    text-align: center;
-}
-
-section img{
-    width: 50%;
-}
-
-.one{
+    padding-right: 40px;
+  }
+  nav li:hover .sub-menu{
+    display: block;
+  }
+  .sub-menu{
+    position:absolute;
+    display:none;
+    margin-left: -40px;
+    padding-top: 10px;
+  }
+/****************************
+  ===== Main Section =====
+****************************/
+  section img{
+    padding-top: 30px;
+    width: 90%;
+  }
+  .welcome-title{
     display:flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 200px;
-}
-
-footer{
+  }
+  .welcome-title h2{
+    margin-left: -450px;
+  }
+  .welcome-title hr{
+    background-color: black;
+  }
+  .div-hr {
+    width: 50%;
+  }
+  article {
+    flex: 1;
+  }
+  article ul{
+    padding: 0;
+  }
+  article ul li {
+    margin-bottom: 15px;
+  }
+  ul {
+    list-style: none;
+  }
+  .text-page3{
+    width:95%;
+    margin: auto;
+    text-align: left;
+  }
+  .text-page2 p{
+    text-align: left;
+  }
+  .main-content{
+    text-align: center;
+  }
+/**** === Page 3 === ****/
+  .main-content{
+    width: 50%;
+    box-shadow: 1px 1px 10px #aaa;
+  }
+  .main-content-links {
+    margin:auto;
+    flex-direction: row;
+  }
+  .main-content ul{
+    padding-left: 17px;
+    margin: auto;
+    display: flex;
+    padding-right:5px;
+    color:white;
+  }
+  .main-content li{
+    padding: 5px;
+    background-color: #e1b3a2;
+    margin-right:5px;
+    font-family: "Josefin Sans";
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .read-more-button{
+    margin-top: 25px;
+    width:100%;
+    height:40px;
+    background-color: #e1b3a2;
+    color:white;
+    font-family: "Josefin Sans";
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-style: none;
+  }
+/****************************
+     ===== Footer =====
+****************************/
+  footer{
     background-color: #F7F7F7;
     padding-top: 50px;
-}
-
-footer ul li{
+  }
+  footer ul li{
     margin-right: 25px;
     letter-spacing: 2px;
-}
-
-footer ul{
+  }
+  footer ul{
     margin: 30px 0 80px 0;
-}
-
-footer section {
+  }
+  footer section {
     font-family: "Josefin Sans";
     width: 70%;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-.center{
-    margin-right: 2%;
-    margin-left: 2%;
-
-}
-
-article {
-    flex: 1;
-}
-
-article ul{
-    padding: 0;
-}
-.listfooter {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-
-article ul li {
-    margin-bottom: 15px;
-}
-
-
-
-ul {
-    list-style: none;
-}
-
-/*video {
-
-}*/
-
-input{
+  }
+  .email{
+    margin:10px 0 10px 10px;
+  }
+  p, .email{
+    letter-spacing: 1px;
+  }
+  .submit-button{
+    background-color: black;
+    color:white;
+    height:45px;
+    width: 120px;
+    border-radius: 4px;
+    font-family: "sans-serif","Josefin Sans";
+    font-weight: bolder;
+  }
+  h5{
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+  input{
     border:none;
-}
-
-form{
+  }
+  form{
     border:1px solid grey;
     display: flex;
     justify-content: space-between;
@@ -111,34 +180,18 @@ form{
     border-radius: 4px;
     border-color: #e5e5e5;
     background-color: white;
-}
-hr{
+  }
+  hr{
     background-color: black;
     margin-bottom: 30px;
     padding: 0px;
-}
-
-.email{
-    margin:10px 0 10px 10px ;
-}
-
-.submit{
-    background-color: black;
-    color:white;
-    height:45px;
-    width: 120px;
-    border-radius: 4px;
-    font-family: "sans-serif","Josefin Sans";
-    font-weight: bolder;
-
-}
-
-p, .email{
-    letter-spacing: 1px;
-}
-
-h5{
-    font-weight: normal;
-    letter-spacing: 1px;
-}
-
+  }
+  .list-footer {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .center-footer{
+    margin-right: 2%;
+    margin-left: 2%;
+  }
