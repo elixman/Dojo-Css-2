@@ -113,14 +113,14 @@
     flex-direction: row;
   }
   .main-content ul{
-    padding-left: 17px;
-    margin: auto;
     display: flex;
+    justify-content: flex-start;
     padding-right:5px;
+    padding-left: 17px;
     color:white;
   }
   .main-content li{
-    margin-right:5px;
+    margin-right:3px;
     padding: 5px;
     background-color: #e1b3a2;
     font-family: "Josefin Sans";
